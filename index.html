@@ -1,0 +1,90 @@
+<html>
+<head>  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"><link rel="stylesheet" href="style.css"></head>
+<body style="background-color: black;">
+        <nav class="navbar-inverse" style="position:sticky;top:0;z-index:99999">
+
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Pizza</a>
+            </div>
+    
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#add">Suggest</a></li>
+                </ul>
+            </div>
+    </nav>
+    <section id="menu">
+        <center><h1>Welcome to Pizzeria Emma</h1></center>
+<div>
+<button onclick="Menu()">Menu</button>
+<h2 id="pizzas" style="color: rgb(255, 252, 241);"></h2>
+</div>
+</section>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<section id="add">
+<span><input id="Suggest" placeholder="Type suggetions here"><button onclick="sumbit">Sumbit</button></span>
+</section>
+</body>
+</html>
+<script>
+    function sumbit()
+    {
+        var Pizza = ["vegi pizza","pepperoni pizza","pineapple pizza","chicken", "pineapple pizza","cheese pizza"]
+        var suggest=document.getElementById("Suggest").value;
+        Pizza.push(suggest);
+    console.log(suggest);
+    document.getElementById("pizzas").innerHTML=Pizza;
+}
+
+    function Menu()
+        {
+            var Pizza = ["vegi pizza","pepperoni pizza","pineapple pizza","chicken", "pineapple pizza","cheese pizza"]
+          
+        console.log(Pizza)
+        document.getElementById("pizzas").innerHTML=Pizza;   
+        }
+    
+</script>
